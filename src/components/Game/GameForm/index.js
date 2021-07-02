@@ -24,15 +24,14 @@ const GameForm = ({attackProps}) => {
 
             for (const item of event.target) {
                 if (item.checked === true && item.name === 'hit') {
-                    attack.player1.value = Math.ceil(Math.random() * hits[item.value]);
-                    attack.player1.hit = item.value;
+                    attackObject.player1.value = Math.ceil(Math.random() * hits[item.value]);
+                    attackObject.player1.hit = item.value;
                 }
                 if (item.checked === true && item.name === 'defence') {
-                    attack.player1.defence = item.value;
+                    attackObject.player1.defence = item.value;
                 }
                 item.checked = false;
             }
-
             return attackObject
         }
 
