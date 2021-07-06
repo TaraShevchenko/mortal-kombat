@@ -243,7 +243,6 @@ body {
 }
 
 .button {
-    display: block;
     position: relative;
     padding: 0 16px;
     height: 36px;
@@ -260,6 +259,10 @@ body {
     cursor: pointer;
     font-family: "Mortal Kombat 3";
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .button::after {

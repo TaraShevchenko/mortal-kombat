@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GameForm = ({attackProps}) => {
+const GameForm = ({attackProps, restart}) => {
 
     const hits = {
         head: 30,
@@ -43,15 +43,15 @@ const GameForm = ({attackProps}) => {
             <div className="inputWrap">
                 <h2>HIT</h2>
                 <div className="ul">
-                    <input type="radio" name="hit" value="head" id="headHit" required/>
+                    <input type="radio" name="hit" value="head" id="headHit" required disabled={restart}/>
                     <label htmlFor="headHit">
                         <span>HEAD</span>
                     </label>
-                    <input type="radio" name="hit" value="body" id="bodyHit" required/>
+                    <input type="radio" name="hit" value="body" id="bodyHit" required disabled={restart}/>
                     <label htmlFor="bodyHit">
                         <span>BODY</span>
                     </label>
-                    <input type="radio" name="hit" value="foot" id="footHit" required/>
+                    <input type="radio" name="hit" value="foot" id="footHit" required disabled={restart}/>
                     <label htmlFor="footHit">
                         <span>FOOT</span>
                     </label>
@@ -60,22 +60,22 @@ const GameForm = ({attackProps}) => {
             <div className="inputWrap">
                 <h2>defence</h2>
                 <div className="ul">
-                    <input type="radio" name="defence" value="head" id="headDefence" required/>
+                    <input type="radio" name="defence" value="head" id="headDefence" required disabled={restart}/>
                     <label htmlFor="headDefence">
                         <span>HEAD</span>
                     </label>
-                    <input type="radio" name="defence" value="body" id="bodyDefence" required/>
+                    <input type="radio" name="defence" value="body" id="bodyDefence" required disabled={restart}/>
                     <label htmlFor="bodyDefence">
                         <span>BODY</span>
                     </label>
-                    <input type="radio" name="defence" value="foot" id="footDefence" required/>
+                    <input type="radio" name="defence" value="foot" id="footDefence" required disabled={restart}/>
                     <label htmlFor="footDefence">
                         <span>FOOT</span>
                     </label>
                 </div>
             </div>
             <div className="buttonWrap">
-                <button className="button" type="submit">
+                <button disabled={restart} className="button" type="submit">
                     Fight
                 </button>
             </div>
