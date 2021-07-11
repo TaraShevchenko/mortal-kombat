@@ -1,6 +1,7 @@
-import './MortalKombat.css';
-
+import React from "react";
 import {Route} from "react-router-dom";
+
+import './MortalKombat.css';
 
 import SelectFighters from "./components/SelectFighters";
 import Game from "./components/Game";
