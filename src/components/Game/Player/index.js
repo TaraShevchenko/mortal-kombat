@@ -11,7 +11,7 @@ const Player = ({player, index}) => {
                 <div className="name">{player.name}</div>
             </div>
             <div className="character">
-                <img src={player.img}/>
+                <img src={player.img} alt={`image${player.img}`}/>
             </div>
         </div>
     );
