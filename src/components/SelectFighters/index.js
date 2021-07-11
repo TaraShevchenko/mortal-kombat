@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import AllPlayers from "./AllPlayers";
 
+/* eslint-disable */
+
 const SelectFighters = () => {
     const [players, setPlayers] = useState([]);
     const [playerShow, setPlayerShow] = useState('');
