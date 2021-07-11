@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* eslint-disable */
+
 const Player = ({player, index}) => {
 
     return (
