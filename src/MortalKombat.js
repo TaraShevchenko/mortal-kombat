@@ -8,11 +8,11 @@ import Game from "./components/Game";
 const MortalKombat = () => {
     return (
         <div className="root">
-            <Route path='/MortalCombat/' exact>
+            <Route path='/' exact>
                 <SelectFighters/>
             </Route>
 
-            <Route path='/MortalCombat/game'>
+            <Route path='/game'>
                 <Game/>
             </Route>
         </div>

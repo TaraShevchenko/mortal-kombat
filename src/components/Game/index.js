@@ -95,7 +95,7 @@ const Game = () => {
                 {restart ? <>
                     <div className="loseTitle">{winner} Wins</div>
                     <div className="reloadWrap">
-                        <NavLink to="/MortalCombat/" className="button" onClick={() => setRestart(false)}>Restart</NavLink>
+                        <NavLink to="/" className="button" onClick={() => setRestart(false)}>Restart</NavLink>
                     </div>
                 </> : ''}
             </div>

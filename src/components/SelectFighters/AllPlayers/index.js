@@ -18,7 +18,7 @@ const AllPlayers = ({players, playerShow}) => {
                 <img src="http://reactmarathon-api.herokuapp.com/assets/mk/avatar/11.png" alt="item.src"/>
             </div>
             {players.map((item, key) => (
-                <NavLink to="/MortalCombat/game" key={key} className={`character div${item.id}`}
+                <NavLink to="/game" key={key} className={`character div${item.id}`}
                          onClick={() => handleSavePlayers(item)} onMouseOver={() => handlePlayerShow(item.img)}>
                     <img src={item.avatar} alt="item.src"/>
                 </NavLink>
